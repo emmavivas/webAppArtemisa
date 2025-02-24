@@ -1,0 +1,38 @@
+/* Color palette */
+:root {
+    --black: #171810;
+    --white: #fcfcfc;
+    --dark-green: #3e6606;
+    --green: #6f913d;
+    --orange: #ff6e05;
+    --gray: #dddddd
+}
+
+/* Ajuste background */
+.background {
+    height: 300px;
+}
+
+/* Main */
+.new_section {
+    background-color: #fcfcfc;
+    margin: 50px 0;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 18px 18px 15px -15px #dddddd;
+
+    p {
+        padding: 0 20px;
+        font-size: 1.2em;
+    }
+}
+
+#map_frame {
+    place-self: center;
+
+    iframe {
+        border-radius: 15px;
+        box-shadow: 18px 18px 15px -15px #dddddd;
+
+    }
+}

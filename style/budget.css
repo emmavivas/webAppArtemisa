@@ -1,0 +1,84 @@
+/* Color palette */
+:root {
+    --black: #171810;
+    --white: #fcfcfc;
+    --dark-green: #3e6606;
+    --green: #6f913d;
+    --orange: #ff6e05;
+    --gray: #dddddd;
+}
+
+/* Ajuste background */
+.background {
+    height: 300px;
+}
+
+/* Main */
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+/* input[type="radio"]:checked {
+    accent-color: var(--green);
+} */
+
+#form_wrapper {
+    place-self: center;
+    padding: 30px;
+    background-color: var(--white);
+    width: 40%;
+
+
+    .form_data {
+        display: flex;
+        flex-direction: column;
+        border: 0;
+        padding: 0;
+
+        input,
+        textarea {
+            margin: 5px 10px;
+            padding: 8px;
+            border-radius: 15px;
+            border: 1px solid var(--black);
+        }
+
+
+        textarea {
+            resize: none;
+            padding: 10px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: 1px solid var(--green);
+        }
+    }
+
+    .submit_button {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .radio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        input {
+            margin: 5px 5px 5px 0;
+        }
+
+        input:checked {
+            accent-color: var(--green);
+        }
+    }
+
+    .button {
+        font-size: 1em;
+    }
+}

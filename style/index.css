@@ -1,0 +1,89 @@
+/* Color palette */
+:root {
+    --black: #171810;
+    --white: #fcfcfc;
+    --dark-green: #3e6606;
+    --green: #6f913d;
+    --orange: #ff6e05;
+    --gray: #dddddd
+}
+
+/* Main */
+#call_to_action {
+    width: 350px;
+    height: auto;
+    padding: 30px;
+    margin: 200px 50px;
+    background-color: #fcfcfc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 3px var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: var(--dark-green);
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    a {
+        margin-top: 30px;
+        color: var(--orange);
+    }
+}
+
+.new_products_cards {
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+    height: 650px;
+    width: 700px;
+}
+
+img.new_product {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 18px 18px 15px -15px var(--gray);
+}
+
+.product1 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.product2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.product3 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.product4 {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+#benefits_of_gardening {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 50px;
+}
+
+#long_card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 18px 18px 15px -15px var(--gray);
+    padding: 20px;
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}

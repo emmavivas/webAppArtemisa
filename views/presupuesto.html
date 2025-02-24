@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Emmanuel Vivas" />
+    <meta
+      name="Keywords"
+      content="Plantas, Decoración, Jardinería, Garden, Plants"
+    />
+    <meta name="locality" content="Barcelona,España,Europa" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tu tienda de confianza, donde encontrarás todo lo que necesitas para el cuidado de tus plantas, tanto de interior como de exterior."
+    />
+    <meta name="robots" content="index follow" />
+    <link rel="stylesheet" href="../style/general.css" />
+    <link rel="stylesheet" href="../style/budget.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>🪴 Artemisa</title>
+  </head>
+  <body>
+    <div id="page_wrapper">
+      <header>
+        <div id="header_container">
+          <nav>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./productos.html">Productos</a></li>
+              <li>
+                <a class="active" href="./presupuesto.html">Presupuesto</a>
+              </li>
+              <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+          <div id="header_logo">
+            <img src="../assets/artemisaLogo.png" alt="Logo Artemisa" />
+          </div>
+          <div id="icon_container">
+            <div class="icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="background_container">
+          <div class="background top">
+            <img src="../assets/2leavesBackground.jpg" alt="Fondo de hojas" />
+          </div>
+          <div class="background bottom">
+            <img src="../assets/leavesBackground.jpg" alt="Fondo de hojas" />
+          </div>
+          <div id="main_container">
+            <section class="new_section">
+              <div id="form_wrapper">
+                <form action="" method="post">
+                  <legend>Necesitas un presupuesto?</legend>
+                  <fieldset class="form_data">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" required />
+                  </fieldset>
+                  <fieldset class="form_data">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                  </fieldset>
+                  <fieldset class="form_data">
+                    <label for="telephone">Teléfono</label>
+                    <input
+                      type="tel"
+                      name="telephone"
+                      id="telephone"
+                      required
+                    />
+                  </fieldset>
+                  <fieldset class="form_data">
+                    <label for="moreInfo"
+                      >Descríbenos brevemente lo que necesitas</label
+                    >
+                    <textarea
+                      name="moreInfo"
+                      id="moreInfo"
+                      rows="5"
+                      placeholder="Necesito cotizar una remodelación de mi jardín..."
+                      required
+                    ></textarea>
+                  </fieldset>
+                  <fieldset class="form_data radio">
+                    <input type="radio" name="radioValue" id="radioValue" />
+                    <label for="radioValue"
+                      >He leido y acepto la
+                      <a href="">política de privacidad</a> de la empresa</label
+                    >
+                  </fieldset>
+                  <fieldset class="form_data submit_button">
+                    <input
+                      class="button"
+                      type="button"
+                      value="Solicitar presupuesto"
+                    />
+                  </fieldset>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div id="footer_container">
+          <div id="footer_logo">
+            <img src="../assets/artemisaLogo.png" alt="Logo Artemisa" />
+          </div>
+          <div id="footer_social_media">
+            <div id="footer_icon_container">
+              <div class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+            </div>
+            <p id="adress">Carrer de Bosques, 123. Barcelona</p>
+            <h5>Todos los derechos reservados</h5>
+          </div>
+          <div id="footer_links">
+            <a href="./presupuesto.html">Presupuesto</a
+            ><a href="./contacto.html">Contacto</a
+            ><a href="/">Terminos y condiciones</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
