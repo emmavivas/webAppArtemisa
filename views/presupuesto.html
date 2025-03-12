@@ -66,15 +66,33 @@
           <div id="main_container">
             <section class="new_section">
               <div id="form_wrapper">
-                <form action="" method="post">
+                <form
+                  action=""
+                  method="post"
+                  onsubmit="event.preventDefault(); if (this.checkValidity()) { window.location.href = '/'; }"
+                >
                   <legend>Necesitas un presupuesto?</legend>
                   <fieldset class="form_data">
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" required />
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      pattern="[A-Za-zÀ-ÿ\s]+"
+                      title="El nombre no debe contener números ni caracteres especiales."
+                      required
+                    />
                   </fieldset>
                   <fieldset class="form_data">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required />
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      pattern=".+@(gmail|outlook|yahoo|hotmail)\.com"
+                      title="El email debe tener un formato válido."
+                      required
+                    />
                   </fieldset>
                   <fieldset class="form_data">
                     <label for="telephone">Teléfono</label>
@@ -82,6 +100,8 @@
                       type="tel"
                       name="telephone"
                       id="telephone"
+                      pattern="(6|7|8|9)[0-9]{8}"
+                      title="El teléfono debe ser un número válido (9 dígitos)."
                       required
                     />
                   </fieldset>
@@ -98,7 +118,12 @@
                     ></textarea>
                   </fieldset>
                   <fieldset class="form_data radio">
-                    <input type="radio" name="radioValue" id="radioValue" />
+                    <input
+                      type="radio"
+                      name="radioValue"
+                      id="radioValue"
+                      required
+                    />
                     <label for="radioValue"
                       >He leido y acepto la
                       <a href="">política de privacidad</a> de la empresa</label
@@ -108,7 +133,7 @@
                     <legend>Todos los campos son requeridos</legend>
                     <input
                       class="button"
-                      type="button"
+                      type="submit"
                       value="Solicitar presupuesto"
                     />
                   </fieldset>
