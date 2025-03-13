@@ -34,36 +34,52 @@
     }
 }
 
-.new_products_cards {
-    margin: 0 auto;
+
+.bento_container {
     display: grid;
-    gap: 15px;
-    height: 650px;
-    width: 700px;
-}
-
-img.new_product {
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 18px 18px 15px -15px var(--gray);
+    max-width: 650px;
+    height: 500px;
 }
 
-.product1 {
-    grid-area: 1 / 1 / 3 / 2;
+.bento_item {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
 }
 
-.product2 {
-    grid-area: 1 / 2 / 2 / 3;
+.tall {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
 }
 
-.product3 {
-    grid-area: 1 / 3 / 2 / 4;
+.small {
+    grid-column: span 1;
+    grid-row: 1 / 2;
 }
 
-.product4 {
-    grid-area: 2 / 2 / 3 / 4;
+.wide {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    max-height: 250px;
+
+    img {
+        object-position: center 65%;
+    }
 }
 
 #benefits_of_gardening {
