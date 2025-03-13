@@ -63,11 +63,6 @@ legend {
         align-items: center;
         margin: 10px 0;
 
-        legend {
-            font-size: 0.8em;
-            color: #660606;
-            margin: auto;
-        }
     }
 
     .radio {
